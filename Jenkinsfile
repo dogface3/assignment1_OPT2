@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    tools{
+        maven 'maven3'
+        jdk 'JD'
+    }
+
     environment {
         DOCKERHUB_CREDENTIALS_ID = 'moi'
         DOCKERHUB_REPO = 'samuel1234567/assignment1_otp2'
